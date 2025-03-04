@@ -1,4 +1,4 @@
-import { NodeProps } from "@xyflow/react";
+ import { NodeProps } from "@xyflow/react";
 import { memo } from "react";
 import NodeCard from "./NodeCard";
 import NodeHeader from "./NodeHeader";
@@ -15,7 +15,7 @@ const NodeComponent = memo((props: NodeProps) => {
       <NodeHeader taskType={nodeData.type} />
       <NodeInputs>
         {task.inputs.map((input) => (
-          <NodeInput key={input.name} input={input} />
+          <NodeInput key={input.name} input={input} nodeId={props.id} />
         ))}
       </NodeInputs>
     </NodeCard>
