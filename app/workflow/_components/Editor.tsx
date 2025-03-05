@@ -17,8 +17,8 @@ function Editor({ workflow }: { workflow: Workflow }) {
           workflowId={workflow.id}
         />
         <section className="flex h-full overflow-auto">
-          <FlowEditor workflow={workflow} />
           <TaskMenu />
+          <FlowEditor workflow={workflow} />
         </section>
       </div>
     </ReactFlowProvider>

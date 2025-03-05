@@ -8,11 +8,21 @@ export const PageToHtmlTask = {
     <CodeIcon className="stroke-rose-500" {...props} />
   ),
   isEntryPoint: true,
-  inputs : [
+  inputs: [
     {
-      name: "Web Page",
+      name: "Web page",
       type: TaskParamType.BROWSER_INSTANCE,
-      required : true,
-    }
+      required: true,
+    },
+  ],
+  outputs: [
+    {
+      name: "HTML",
+      type: TaskParamType.STRING,
+    },
+    {
+      name: "Web page",
+      type: TaskParamType.BROWSER_INSTANCE,
+    },
   ],
 };

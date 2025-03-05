@@ -8,13 +8,14 @@ export const LaunchBrowserTask = {
     <GlobeIcon className="stroke-purple-500" {...props} />
   ),
   isEntryPoint: true,
-  inputs : [
+  inputs: [
     {
       name: "Website Url",
       type: TaskParamType.STRING,
       helperText: "eg: https://www.google.com",
-      required : true,
+      required: true,
       hideHandle: true,
-    }
+    },
   ],
+  outputs: [{ name: "web page", type: TaskParamType.BROWSER_INSTANCE }],
 };
